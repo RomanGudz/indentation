@@ -1,0 +1,119 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: Roboto, sans-serif;
+  color: #000;
+  background-color: #fff;
+  position: relative;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+iframe {
+  border: none;
+}
+
+section {
+  padding-top: 50px;
+}
+section:first-child {
+  padding-top: 60px;
+}
+
+section:last-child {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+article {
+  padding: 0 30px;
+}
+
+article:nth-child(2) {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 0;
+}
+
+/*
+Доступно скрываю элементы
+*/
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+/*
+Пример контейнера
+
+Если контейнер 1180px по макету,
+то для max-width прибавляем паддинги 30px*2, 
+в итоге 1240px
+Чтобы контент не прижимался к краям экрана
+*/
+
+.container {
+  max-width: 1140px;
+  margin: 0 150px;
+}

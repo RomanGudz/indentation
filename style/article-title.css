@@ -1,0 +1,38 @@
+.article-title__title {
+  font-weight: 900;
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.article-title__p {
+  text-align: left;
+}
+
+.article-title__p:first-of-type {
+  margin-bottom: 30px;
+}
+
+.article-title__p:last-of-type {
+  margin-bottom: 50px;
+}
+
+.article-title__h2 {
+  font-weight: 700;
+  font-size: 44px;
+  padding: 25px 0 20px 45px;
+}
+
+.article-title__list {
+  padding-left: 70px;
+}
+
+.article-title__item {
+  padding-bottom: 10px;
+}
+.article-title__item:last-child {
+  padding-bottom: 25px;
+}
+
+.article-title__item-link {
+  color: #02535f;
+}

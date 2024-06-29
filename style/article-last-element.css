@@ -1,0 +1,60 @@
+.article-last-element__article:first-child {
+  margin-bottom: 50px;
+}
+.article-last-element__h2 {
+  margin-bottom: 30px;
+}
+.article-last-element__h2-big {
+  font-weight: 700;
+  font-size: 44px;
+  margin-bottom: 20px;
+  padding: 25px 0 0 45px;
+}
+.article-last-element__p {
+  margin-bottom: 30px;
+}
+
+.article-last-element__p:last-child {
+  padding: 0 30px 25px 45px;
+  margin-bottom: 0;
+}
+.article-last-element__figure:first-of-type {
+  margin-bottom: 30px;
+}
+.article-last-element__figure-figcaption {
+  margin-bottom: 30px;
+}
+
+.article-last-element__figure-img-recipes {
+  padding: 0 240px;
+  margin-bottom: 30px;
+}
+
+.article-last-element__figure-img {
+  margin-bottom: 30px;
+}
+
+.article-last-element__figure-img:nth-of-type(2) {
+  padding: 0 137px;
+}
+
+.article-last-element__figure-img:nth-of-type(3) {
+  padding: 0 381px 0 382px;
+}
+.article-last-element__figure-img:nth-of-type(4) {
+  padding: 0 290px;
+  margin-bottom: 0;
+}
+
+.article-last-element__list {
+  list-style: none;
+  margin-bottom: 30px;
+}
+.article-last-element__list-item {
+  margin-bottom: 10px;
+  padding-left: 46px;
+}
+
+.article-last-element__list-item:last-of-type {
+  margin-bottom: 0;
+}

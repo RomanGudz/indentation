@@ -1,0 +1,35 @@
+.article-margin {
+}
+/* .article-margin__article {
+  padding: 0 30px;
+} */
+.article-margin__h2 {
+  font-weight: 900;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+.article-margin__figure {
+  display: flow-root;
+}
+
+.article-margin__figure:first-of-type {
+  margin-bottom: 30px;
+}
+
+.article-margin__figure-img-float-left {
+  float: left;
+  margin-right: 30px;
+}
+
+.article-margin__figure-img-float-right {
+  float: right;
+  margin-left: 40px;
+}
+
+.article-margin__figure-figcaption {
+  margin-bottom: 30px;
+}
+
+.article-margin__figure-figcaption:last-child {
+  margin-bottom: 0px;
+}
