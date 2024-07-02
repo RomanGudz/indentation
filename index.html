@@ -11,11 +11,11 @@
 
 <body>
   <main>
-    <section class="article-title">
-      <div class="container">
-        <article class="article-title__article">
-          <h1 class="article-title__title">Отступы в вёрстке: margin и padding</h1>
-          <p class="article-title__p">В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения
+    <article>
+      <section class="section-title">
+        <div class="container">
+          <h1 class="section-title__title">Отступы в вёрстке: margin и padding</h1>
+          <p class="section-title__p">В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения
             смысла и хорошей читаемости
             вашего кода.
             Если точнее — речь пойдет об основных правилах организации отступов. Они сильно влияют на общую
@@ -23,7 +23,7 @@
             если всё сделано верно, позволяют легко вносить изменения в любую его часть. При этом другие части кода
             продолжат
             нормально работать.</p>
-          <p class="article-title__p">Как это часто бывает, знание базовых принципов поможет проявить гибкость и выйти
+          <p class="section-title__p">Как это часто бывает, знание базовых принципов поможет проявить гибкость и выйти
             за
             их пределы. Эти знания
             особенно
@@ -31,9 +31,10 @@
             поговорим
             о
             фундаментальных основах работы с отступами в вёрстке.</p>
-        </article>
-
-        <article class="article-title__article">
+        </div>
+      </section>
+      <section>
+        <nav class="article-title__navigate">
           <h2 class="article-title__h2">Содержание:</h2>
 
           <ol class="article-title__list">
@@ -47,58 +48,57 @@
                 Для последнего элемента группы отступ обнуляется</a>
             </li>
           </ol>
-        </article>
-      </div>
-    </section>
-    <section id="section1" class="article-margin">
-      <div class="container">
-        <article class="article-margin__article">
+        </nav>
+      </section>
+      <section id="section1">
+        <div class="container clear-float">
           <h2 class="article-margin__h2">Отступ задается от предыдущего элемента к следующему: от первого ко второму,
             сверху вниз, слева направо.
           </h2>
-          <figure class="article-margin__figure">
-            <img src="./img/margin_li.jpg" alt="скриншот с li элементами и margin между ними"
-              class="article-margin__figure-img-float-left">
-            <figcaption class="article-margin__figure-figcaption">
-              <b>ВАЖНО:</b> <i>margin</i> всегда задают от предыдущего элемента к
-              следующему.
-            </figcaption>
-            <figcaption class="article-margin__figure-figcaption">Свойство <i>margin</i> необходимо только для того,
-              чтобы
-              отодвинуть своего соседа справа или снизу, поэтому используется
-              <i>margin-right</i> и <i>margin-bottom</i>.
-            </figcaption>
-            <figcaption class="article-margin__figure-figcaption">(!) Свойства <i>margin-left</i> и <i>margin-top</i>
-              используются
-              крайне редко.</figcaption>
-            <figcaption class="article-margin__figure-figcaption">Для <i>padding</i> верно обратное. Исключением
-              является его
-              применения в декоративных целях, например, для увеличения области
-              ссылки.</figcaption>
-          </figure>
+          <img src="./img/margin_li.jpg" alt="скриншот с li элементами и margin между ними"
+            class="article-margin__img-float-left">
 
-          <figure class="article-margin__figure ">
-            <img src="./img/section_padding.jpg" alt="фрагмент страницы где показаны отступы у секции"
-              class="article-margin__figure-img-float-right">
-            <figcaption class="article-margin__figure-figcaption">Отступ внутри блока сверху или слева реализуется через
-              <i>padding-top</i> и <i>padding-left</i>
-              родителя.
-            </figcaption>
-            <figcaption class="article-margin__figure-figcaption">Отступы, как правило, делают в направлении от
-              предыдущего элемента к следующему. Так элемент не
-              будет толкать сам себя.</figcaption>
-            <figcaption class="article-margin__figure-figcaption">Изначально элемент статичен, а его положение может
-              меняться только под воздействием свойств
-              других блоков или свойств
-              родителя.</figcaption>
-          </figure>
-        </article>
-      </div>
-    </section>
-    <section id="section2" class="article-last-dom">
-      <div class="container">
-        <article class="article-last-dom__article">
+          <p class="article-margin__p-right">
+            <b>ВАЖНО:</b> <i>margin</i> всегда задают от предыдущего элемента к
+            следующему.
+          </p>
 
+          <p class="article-margin__p-right">Свойство <i>margin</i> необходимо только для того,
+            чтобы
+            отодвинуть своего соседа справа или снизу, поэтому используется
+            <i>margin-right</i> и <i>margin-bottom</i>.
+          </p>
+
+          <p class="article-margin__p-right">(!) Свойства <i>margin-left</i> и <i>margin-top</i>
+            используются
+            крайне редко.</p>
+
+          <p class="article-margin__p-right">Для <i>padding</i> верно обратное. Исключением
+            является его
+            применения в декоративных целях, например, для увеличения области
+            ссылки.</p>
+
+          <img src="./img/section_padding.jpg" alt="фрагмент страницы где показаны отступы у секции"
+            class="article-margin__img-float-right">
+
+          <p class="article-margin__p-left">Отступ внутри блока сверху или слева реализуется
+            через
+            <i>padding-top</i> и <i>padding-left</i>
+            родителя.
+          </p>
+
+          <p class="article-margin__p-left">Отступы, как правило, делают в направлении от
+            предыдущего элемента к следующему. Так элемент не
+            будет толкать сам себя.</p>
+
+          <p class="article-margin__p-left">Изначально элемент статичен, а его положение может
+            меняться только под воздействием свойств
+            других блоков или свойств
+            родителя.</p>
+        </div>
+      </section>
+      <section id="section2">
+        <div class="container">
           <h2 class="article-last-dom__h2">Отступ задается последнему возможному элементу в DOM-дереве</h2>
 
           <figure class="article-last-dom__figure">
@@ -117,7 +117,8 @@
           <figure class="article-last-dom__figure img-solid">
             <img src="./img/importan_li.jpg" alt="два совмещеных фрагмента демонстрирующих код и отступы на странице">
 
-            <figcaption class="article-last-dom__figcaption-important"><b>ВАЖНО</b>: здесь <i>.list-item </i>— последний
+            <figcaption class="article-last-dom__figcaption-important"><b>ВАЖНО</b>: здесь <i>.list-item </i>—
+              последний
               возможный
               элемент в котором мы задаём отступ, чтобы
               разделить списки.</figcaption>
@@ -156,20 +157,19 @@
               того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной
               структурой отступов.</figcaption>
           </figure>
-        </article>
-      </div>
-    </section>
-    <section id="section3" class="article-last-element">
-      <div class="container">
-        <article class="article-last-element__article">
+        </div>
+      </section>
+      <section id="section3">
+        <div class="container ">
           <h2 class="article-last-element__h2">Для последнего элемента группы отступ всегда обнуляется</h2>
 
           <p class="article-last-element__p">Для наглядности возьмём наш предыдущий пример с рецептами</p>
 
+          <p class="article-last-element__p">Между рецептами расстояние одинаковое. Можно
+            заметить, что и до следующего блока расстояние
+            такое же.</p>
+
           <figure class="article-last-element__figure">
-            <figcaption class="article-last-element__figure-figcaption">Между рецептами расстояние одинаковое. Можно
-              заметить, что и до следующего блока расстояние
-              такое же.</figcaption>
 
             <img src="./img/useful_recipes.jpg" class="article-last-element__figure-img-recipes"
               alt="фрагмент страницы отступ между элементами показан стрелкой">
@@ -192,52 +192,58 @@
           </figure>
 
           <figure class="article-last-element__figure">
-            <figcaption class="article-last-element__figure-figcaption">Для большего понимания рассмотрим другой пример,
+            <figcaption class="article-last-element__figure-figcaption">Для большего понимания рассмотрим другой
+              пример,
               который часто встречается на практике:
             </figcaption>
 
             <img src="./img/header_menu.jpg" class="article-last-element__figure-img"
               alt="фрагмент страницы с главным меню сайта">
-            <img src="./img/header_code.jpg" class="article-last-element__figure-img" alt="код главного меню сайта">
+          </figure>
 
-            <figcaption class="article-last-element__figure-figcaption">Здесь нас интересует отступ между пунктами меню
+          <img src="./img/header_code.jpg" class="article-last-element__img-center" alt="код главного меню сайта">
+
+          <figure class="article-last-element__figure">
+            <figcaption class="article-last-element__figure-figcaption">Здесь нас интересует отступ между пунктами
+              меню
               и списком с кнопкой поиска. Отступы между
               пунктами меню задаются так:</figcaption>
 
-            <img src="./img/header_style1.jpg" class="article-last-element__figure-img"
+            <img src="./img/header_style1.jpg" class="article-last-element__figure-img img-center-small"
               alt="css код для отступа между пунктами меню">
+          </figure>
 
+          <figure class="article-last-element__figure">
             <figcaption class="article-last-element__figure-figcaption">Советую использовать псевдоклассы :last-child
               чаще других, например так:</figcaption>
 
-            <img src="./img/header_style2.jpg" class="article-last-element__figure-img"
+            <img src="./img/header_style2.jpg" class="article-last-element__figure-img img-center-big"
               alt="код стилей где написаны варианты использования псевдокласов в css">
           </figure>
-        </article>
+        </div>
+        <section class="section-result">
+          <h2 class="section-result__h2">Подытожим:</h2>
 
-        <article class="article-last-element__article">
-          <h2 class="article-last-element__h2-big">Подытожим:</h2>
-
-          <ul class="article-last-element__list">
-            <li class="article-last-element__list-item">
+          <ul class="section-result__list">
+            <li class="section-result__list-item">
               — отступы задаём от предыдущего элемента к следующему</li>
-            <li class="article-last-element__list-item">
+            <li class="section-result__list-item">
               — используем только margin-right и margin-bottom</li>
-            <li class="article-last-element__list-item">
+            <li class="section-result__list-item">
               — внешние отступы задаются только между соседями</li>
-            <li class="article-last-element__list-item">
+            <li class="section-result__list-item">
               — внутренний отступ задаём самому верхнему элементу в дом дереве</li>
-            <li class="article-last-element__list-item">
+            <li class="section-result__list-item">
               — последнему элементу группы отступ всегда обнуляем</li>
           </ul>
 
-          <p class="article-last-element__p">Конечно бывают исключения. Ведь макеты бывают различной сложности. Иногда
+          <p class="section-result__p">Конечно бывают исключения. Ведь макеты бывают различной сложности. Иногда
             базовые принципы приходится
             нарушать в угоду
             дизайнерского решения или простоты вёрстки. Но для этого эти принципы необходимо хорошо знать.</p>
-        </article>
-      </div>
-    </section>
+        </section>
+      </section>
+    </article>
   </main>
 </body>
 

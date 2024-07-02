@@ -1,35 +1,36 @@
-.article-margin {
-}
-/* .article-margin__article {
-  padding: 0 30px;
-} */
 .article-margin__h2 {
   font-weight: 900;
   font-size: 36px;
   margin-bottom: 30px;
 }
-.article-margin__figure {
-  display: flow-root;
-}
 
-.article-margin__figure:first-of-type {
+.article-margin__img-float-left {
+  float: left;
+  margin-right: 30px;
   margin-bottom: 30px;
 }
 
-.article-margin__figure-img-float-left {
-  float: left;
-  margin-right: 30px;
-}
-
-.article-margin__figure-img-float-right {
+.article-margin__img-float-right {
   float: right;
   margin-left: 40px;
 }
 
-.article-margin__figure-figcaption {
+.article-margin__p-right {
   margin-bottom: 30px;
+  display: inline-block;
+  max-width: 45%;
 }
 
-.article-margin__figure-figcaption:last-child {
+.article-margin__p-right:last-child {
+  margin-bottom: 0px;
+}
+
+.article-margin__p-left {
+  margin-bottom: 30px;
+  display: inline-block;
+  max-width: 44%;
+}
+
+.article-margin__p-left:last-child {
   margin-bottom: 0px;
 }

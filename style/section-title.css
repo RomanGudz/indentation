@@ -1,19 +1,29 @@
-.article-title__title {
+.section-title {
+  padding-top: 0;
+  padding-bottom: 25px;
+}
+
+.section-title__title {
   font-weight: 900;
   font-size: 60px;
   margin-bottom: 30px;
 }
 
-.article-title__p {
+.section-title__p {
   text-align: left;
 }
 
-.article-title__p:first-of-type {
+.section-title__p:first-of-type {
   margin-bottom: 30px;
 }
 
-.article-title__p:last-of-type {
-  margin-bottom: 50px;
+.section-title__p:last-of-type {
+  margin-bottom: 0px;
+}
+
+.article-title__navigate {
+  background-color: #f1f1f1;
+  border-radius: 10px;
 }
 
 .article-title__h2 {
